@@ -1,0 +1,610 @@
+/******************************************/
+/****************SETUP********************/
+/****************************************/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+.container{
+    width: 80%;
+    margin: 0 12.5%;
+    overflow: hidden;
+}
+
+
+
+
+ul, h1{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.button-filled{
+    padding: 15px 30px;
+    background-color: black;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+.button-empty{
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+
+/*Back to top button BEGIN*/
+
+#scroll {
+    display: none;
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color: black;
+    text-indent:-9999px;
+    display:none;
+    border-radius:60px;
+    transition: background-color 0.5s;
+}
+
+
+
+
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+
+
+
+
+#scroll:hover {
+    background-color:#505050;
+    opacity:1;filter:"alpha(opacity=100)";
+}
+
+/*Back to top button END*/
+
+
+/******************************************/
+/****************HEADER*******************/
+/****************************************/
+
+header{
+    min-height: 70px;
+    padding: 13px;
+    border-bottom: 0.5px solid #aaaaaa;
+}
+
+
+
+
+header .menu{
+    display: none;
+}
+
+
+
+
+header #brand{
+    float: left;
+}
+
+
+
+
+header nav{
+    margin-top: 13px; 
+    float: right;
+}
+
+
+
+
+header ul li{
+    padding: 20px;
+    display: inline;
+    list-style: none;
+}
+
+
+
+
+header ul li a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+/******************************************/
+/****************SHOWCASE*****************/
+/****************************************/
+
+#showcase{
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/wu-yi-196060.jpg");
+    background-position: center center;
+    color: #f1c40f;
+}
+
+
+
+
+#showcase h1{
+    font-size: 45px;
+    margin-top: 150px;
+    max-width: 50%;
+}
+
+
+
+
+/******************************************/
+/****************GET STARTED**************/
+/****************************************/
+
+#getStarted{
+    min-height: 400px;
+    background-color: #efefef;
+}
+
+
+
+
+#getStarted #startedMessage{
+    width: 30%;
+    margin-top: 60px;
+    float: left;
+}
+
+
+
+
+#getStarted #startedMessage h5{
+    margin-bottom: 5px;
+}
+
+
+
+
+#getStarted #startedMessage h1{
+    margin-bottom: 30px;
+    color: green;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+
+
+
+
+#getStarted #startedPic{
+    width: 50%;
+    float: right;
+}
+
+
+
+
+#getStarted #startedPic{
+    margin-top: 100px;
+}
+
+
+
+
+#getStarted #startedPic .fa-html5{
+    margin-right: 150px;
+    font-size: 250px;
+    color: #e8491d;
+}
+
+
+
+
+#getStarted #startedPic .fa-css3{
+    font-size: 250px;
+    color: #f1c40f;
+}
+
+
+
+
+/******************************************/
+/****************TEST*********************/
+/****************************************/
+
+#test{
+    min-height: 300px;
+    background-color: #cccccc;
+}
+
+
+
+
+#test i{
+    width: 30%;
+    float: left;
+    font-size: 325px;
+    margin-top: 25px;
+}
+
+
+
+
+#test #testMessage{
+    width: 60%;
+    float: right;
+}
+
+
+
+
+#test #testMessage h1{
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/******************************************/
+/****************OUR CUSTOMERS************/
+/****************************************/
+
+/*LEARN TO MAKE CAROUSEL STYLE LIST AS ON PINTEREST AND IMAGE*/
+
+
+
+
+/******************************************/
+/****************BLOG*********************/
+/****************************************/
+
+#blog{
+    min-height: 625px;
+}
+
+
+
+
+#blog h5{
+   margin-top: 50px;
+   margin-bottom: 5px;
+}
+
+
+
+
+#blog h1{
+   margin-bottom: 30px;
+   font-size: 40px;
+}
+
+
+
+
+#blog .post{
+    width: 30%;
+    margin-right: 25px;
+    float: left;
+}
+
+
+
+
+#blog .post h4{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+
+
+
+#blog .post img{
+    width: 100%;
+}
+
+
+
+
+#blog .post p{
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+
+/******************************************/
+/****************IMPLEMENTATION***********/
+/****************************************/
+
+#implementation{
+    min-height: 625px;
+    background-color: #efefef;
+}
+
+
+
+
+#implementation h5{
+   margin-top: 50px;
+   margin-bottom: 5px;
+}
+
+
+
+
+#implementation h1{
+   margin-bottom: 30px;
+   font-size: 40px;
+}
+
+
+
+
+#implementation .article{
+    width: 20%;
+    margin-right: 50px;
+    float: left;
+}
+
+
+
+
+#implementation .article:nth-of-type(4){
+    margin-right: 0px;
+}
+
+
+
+
+#implementation .article h4{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+
+
+
+#implementation .article img{
+    width: 110%;
+}
+
+
+
+
+#implementation .article p{
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+
+
+/******************************************/
+/****************JAMS*********************/
+/****************************************/
+
+#jams{
+    min-height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/showcase.jpg");
+    background-position: center center;
+    color: #ffffff;
+}
+
+
+
+
+
+#jams #jams-left{
+    width: 35%;
+    float: left;
+}
+
+
+
+
+
+#jams h5{
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+
+
+
+#jams h1{
+   margin-bottom: 30px;
+   font-size: 40px;
+}
+
+
+
+
+#jams-right{
+    width: 40%;
+    margin-top: 40px;
+    float: right;
+}
+
+
+
+
+#jams-right i{
+    font-size: 325px;
+}
+
+
+
+
+/******************************************/
+/****************CONTACT******************/
+/****************************************/
+
+#contact{
+    min-height: 400px;
+    background-color: #f1c40f;
+}
+
+
+
+
+#contact h1{
+    margin-top: 50px;
+}
+
+
+
+
+#contact p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+#contact input{
+    min-width: 40%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #efefef;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+#contact button{
+    margin-top: 30px;
+}
+
+
+
+
+/******************************************/
+/****************FOOTER*******************/
+/****************************************/
+
+footer{
+    min-height: 300px;
+    background-color: rgba(22, 22, 22, 255);
+    color: #efefef;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+footer #copyright{
+    width: 20%;
+    margin-top: 50px;
+    float: left;
+    line-height: .75;
+}
+
+
+
+
+footer #copyright h2{
+    margin-bottom: 20px;
+}
+
+
+
+
+footer #social ul li a{
+    color: #efefef;
+    text-decoration: none;
+    line-height: 2;
+}
+
+
+
+/*
+footer #sweden{
+    width: 20%;
+    margin-top: 50px;
+    float: left;
+}
+
+
+
+
+footer #states{
+    width: 20%;
+    margin-top: 50px;
+    float: left;
+}
+*/
+
+
+
+
+footer div{
+    width: 20%;
+    margin-top: 50px;
+    float: left;
+}
+
+
+
+
+footer div ul li{
+    list-style: none;
+}
+
+
+
+
+footer .info{
+    border-left: 0.5px solid #cccccc;
+    padding-left: 25px;
+}
